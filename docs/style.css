@@ -1,0 +1,216 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d url("images/suelen.jpeg") no-repeat center/cover;
+  color: #eee;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* Overlay escuro no fundo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+/* 🔝 Menu */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(20, 20, 20, 0.95);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #2d2d2d;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+nav h1 {
+  color: #c77dff;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  color: #c77dff;
+  border-bottom: 2px solid #c77dff;
+  padding-bottom: 4px;
+}
+
+/* 🌟 Intro */
+.intro {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.intro h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.intro span {
+  color: #c77dff;
+  font-weight: 700;
+}
+
+/* 📷 Foto de Perfil */
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #c77dff;
+  box-shadow: 0 0 15px rgba(199, 125, 255, 0.4);
+  margin: 2rem auto;
+  display: block;
+}
+
+/* Seções */
+section {
+  padding: 6rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #c77dff;
+}
+
+/* Badges */
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.badge {
+  background: #1a1a1a;
+  border: 1px solid #8a2be2;
+  color: #c77dff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.badge:hover {
+  background: #8a2be2;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Projetos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #2d2d2d;
+  box-shadow: 0 4px 14px rgba(138, 43, 226, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(138, 43, 226, 0.4);
+}
+
+.card h3 {
+  color: #c77dff;
+  margin-bottom: 1rem;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  background: #8a2be2;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(138, 43, 226, 0.4);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c77dff;
+  color: #000;
+  box-shadow: 0 6px 16px rgba(138, 43, 226, 0.6);
+}
+
+/* Contato */
+.contato {
+  text-align: center;
+  background: #141414;
+  border-top: 1px solid #2d2d2d;
+}
+
+.contato a {
+  margin: 0.6rem;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #2d2d2d;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .intro h2 {
+    font-size: 1.6rem;
+  }
+
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+  }
+}
