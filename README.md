@@ -6,7 +6,8 @@ Bem-vindo ao meu portfólio pessoal! Aqui você encontrará projetos e trabalhos
 ## Sobre mim
 
 Sou estudante de TI com foco em desenvolvimento web e interesse em criar aplicações funcionais, organizadas e bem estruturadas. Este portfólio reúne projetos que demonstram minhas habilidades técnicas e criatividade.
-
+Cursando: Desenvolvimento de Software Multiplataforma
+Turma: 2° Semestre 2025
 
 ## Estrutura do Repositório
 
