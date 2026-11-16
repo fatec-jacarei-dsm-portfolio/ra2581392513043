@@ -49,6 +49,7 @@ html, body { margin: 0; padding: 0; }
   --gem4-a: oklch(88% 0.06 260); --gem4-b: oklch(60% 0.12 260);
   --gem5-a: oklch(88% 0.06 160); --gem5-b: oklch(60% 0.1 160);
   --gem6-a: oklch(88% 0.06 200); --gem6-b: oklch(60% 0.11 200);
+  --gem7-a: oklch(88% 0.06 45); --gem7-b: oklch(62% 0.12 45);
 
   --tag-bg: oklch(94% 0.015 345);
   --tag-text: oklch(40% 0.03 345);
@@ -97,6 +98,7 @@ html, body { margin: 0; padding: 0; }
   --gem4-a: oklch(75% 0.1 260); --gem4-b: oklch(45% 0.14 260);
   --gem5-a: oklch(75% 0.1 160); --gem5-b: oklch(45% 0.12 160);
   --gem6-a: oklch(75% 0.1 200); --gem6-b: oklch(45% 0.13 200);
+  --gem7-a: oklch(75% 0.1 45); --gem7-b: oklch(48% 0.13 45);
 
   --tag-bg: oklch(28% 0.05 300);
   --tag-text: oklch(85% 0.03 300);
@@ -151,6 +153,7 @@ svg { display: block; }
 .project-contribution { font-size: 13px; line-height: 1.6; color: var(--text-muted); margin: 0 0 14px 0; padding: 10px 12px; background: var(--tag-bg); border-left: 3px solid var(--accent); }
 .project-contribution b { color: var(--text); }
 .project-meta { font-size: 12px; font-weight: 800; color: var(--meta-text); text-transform: uppercase; letter-spacing: .03em; }
+.project-meta + a { white-space: nowrap; }
 .cat-heading { font-family: 'Press Start 2P', monospace; font-weight: 400; font-size: 14px; color: var(--accent); margin: 0 0 24px 0; padding-bottom: 10px; border-bottom: 2px solid var(--nav-border); }
 .cat-empty { font-size: 14px; color: var(--text-muted); font-style: italic; margin: 0 0 56px 0; }
 
